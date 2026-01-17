@@ -167,3 +167,167 @@ body {
 .save-btn:hover {
   background: #059669;
 }
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filters button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filters button.active {
+  background: #3b82f6;
+  color: #fff;
+}
+
+body.dark {
+  background-color: #222;
+  color: #fff;
+}
+body.light {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark mode styles for the app card */
+.todo-app.dark {
+  background: #1f2937;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.todo-app.dark .todo-text {
+  color: #e5e7eb;
+}
+
+.todo-app.dark .todo-item {
+  background: #111827;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.todo-app.dark .input-row input,
+.todo-app.dark .edit-input {
+  background: #0b1220;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+.todo-app.dark .input-row button {
+  background: #2563eb;
+}
+
+.todo-app.dark .filters button {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+.todo-app.dark .filters button.active {
+  background: #3b82f6;
+}
+
+/* Dark mode toggle switch */
+.dark-toggle {
+  display: inline-block;
+  position: relative;
+  width: 46px;
+  height: 26px;
+  margin-bottom: 14px;
+  margin-left: auto;
+}
+
+.dark-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cbd5e1;
+  transition: 0.2s;
+  border-radius: 999px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.dark-toggle .slider:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.dark-toggle input:checked + .slider {
+  background-color: #2563eb;
+}
+
+.dark-toggle input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.dark-toggle:focus-within .slider {
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* Footer: active count and clear button */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 1px solid #e6eef8;
+}
+
+.active-count {
+  color: #374151;
+  font-size: 14px;
+}
+
+.clear-btn {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.clear-btn:hover {
+  background: rgba(239,68,68,0.08);
+}
+
+/* Dark mode footer adjustments */
+.todo-app.dark .footer {
+  border-top-color: rgba(255,255,255,0.06);
+}
+
+.todo-app.dark .active-count {
+  color: #cbd5e1;
+}
+
+.todo-app.dark .clear-btn {
+  color: #f87171;
+}
+
+.todo-app.dark .clear-btn:hover {
+  background: rgba(248,113,113,0.08);
+}
