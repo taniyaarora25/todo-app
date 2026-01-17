@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Card */
+.todo-app {
+  width: 380px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.todo-app h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2d3748;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Input Row */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-row input:focus {
+  border-color: #667eea;
+}
+
+/* Add Button */
+.input-row button {
+  border-radius: 10px;
+  border: none;
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.input-row button:hover {
+  background: #2563eb;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+}
+
+/* Todo Item */
+.todo-item {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Left Section */
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-left input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.todo-text {
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Actions */
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-actions button {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Edit */
+.edit-btn {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.edit-btn:hover {
+  background: #d1d5db;
+}
+
+/* Delete */
+.delete-btn {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+/* Edit Input */
+.edit-input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  outline: none;
+  font-size: 14px;
+}
+
+.edit-input:focus {
+  border-color: #667eea;
+}
+
+/* Save Button */
+.save-btn {
+  background: #10b981;
+  color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.save-btn:hover {
+  background: #059669;
+}
